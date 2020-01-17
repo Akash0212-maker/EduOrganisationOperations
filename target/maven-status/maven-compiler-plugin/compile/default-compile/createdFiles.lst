@@ -1,0 +1,12 @@
+com\edu\beans\OrgBatch.class
+com\edu\beans\User.class
+com\example\demo\EduOrgOperationsApplication.class
+com\edu\beans\Address.class
+com\edu\beans\Organisation.class
+com\edu\daoImpl\UserDaoImpl.class
+com\edu\beans\Advertisement.class
+com\edu\dao\UserDao.class
+com\edu\controllers\OrgOprController.class
+com\edu\beans\FacultyDetails.class
+com\edu\beans\DocRegistration.class
+com\edu\config\EduOrgDataSource.class
