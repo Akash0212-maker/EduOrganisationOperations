@@ -14,12 +14,14 @@ import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.support.JdbcDaoSupport;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
+import org.springframework.stereotype.Repository;
 
 import com.edu.beans.CustomeFilterBean;
 import com.edu.beans.Organisation;
 import com.edu.beans.User;
 import com.edu.dao.OrgDao;
 
+@Repository
 public class OrgDaoImpl extends  JdbcDaoSupport implements OrgDao  {
 
 
