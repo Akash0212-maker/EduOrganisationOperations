@@ -2,12 +2,17 @@ package com.edu.beans;
 
 import java.util.Date;
 import java.util.List;
+import com.edu.beans.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-
+@Document("Organisation")
 public class Organisation {
 
+	@Id
+    Long orgID;
 	String orgName;
 	String orgRegNumber;
 	Date estabDate;
@@ -21,7 +26,7 @@ public class Organisation {
 	@Autowired 
 	Address addr;
 	@Autowired	
-	List<OrgBatch> batch;
+	List<OrganisationBatch> batch;
 	@Autowired
 	List<FacultyDetails> facultyDetails;
 	
@@ -86,10 +91,10 @@ public class Organisation {
 	public void setAddr(Address addr) {
 		this.addr = addr;
 	}
-	public List<OrgBatch> getBatch() {
+	public List<OrganisationBatch> getBatch() {
 		return batch;
 	}
-	public void setBatch(List<OrgBatch> batch) {
+	public void setBatch(List<OrganisationBatch> batch) {
 		this.batch = batch;
 	}
 	public List<FacultyDetails> getFacultyDetails() {

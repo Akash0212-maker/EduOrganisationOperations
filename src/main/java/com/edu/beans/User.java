@@ -1,11 +1,14 @@
 package com.edu.beans;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-
+@Document("User")
 public class User {
 
-	
+	@Id
+	int id;
 	String userId;
 	String name;
 	int age;

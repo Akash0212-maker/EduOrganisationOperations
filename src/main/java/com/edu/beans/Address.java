@@ -1,7 +1,13 @@
 package com.edu.beans;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+
 public class Address {
 
+	@Id
+	int id;
 	String regNumber;
 	String houseNo;
 	String city;
