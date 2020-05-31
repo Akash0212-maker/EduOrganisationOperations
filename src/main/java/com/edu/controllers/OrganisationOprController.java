@@ -44,13 +44,7 @@ public class OrganisationOprController {
 		}
 	}
 
-	/*
-	 * @GetMapping(path="/edu/getFilteredOrgList") public List<Organisation>
-	 * getFilteredOrganisationList(@RequestHeader Map<String,String> map){ list= new
-	 * ArrayList();
-	 * 
-	 * return list; }
-	 */
+	
 
 	@GetMapping(path="/edu/getOrgList" , produces = "application/json")
 	public List<Organisation> getOrganisationList(){
